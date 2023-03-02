@@ -3,7 +3,14 @@
     padding: 0;
 
 }
-
+/* Added color pallet */
+:root {
+    --primary: rgb(119, 70, 68);
+    --secondary: rgb(206, 159, 146);
+    --tertiary: rgb(61, 52, 49);
+    --dark: rgb(33, 29, 28);
+    --light: rgb(247, 238, 238);
+  }
 
 header {
     display: inline-block;
