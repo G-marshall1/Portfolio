@@ -1,34 +1,110 @@
 * {
-    margin: 0;
-    padding: 0;
+    box-sizing: content-box;
 
 }
 /* Added color pallet */
 :root {
-    --primary: rgb(119, 70, 68);
-    --secondary: rgb(206, 159, 146);
-    --tertiary: rgb(61, 52, 49);
-    --dark: rgb(33, 29, 28);
+    --primary: rgb(117, 50, 48);
+    --secondary: rgb(203, 106, 106);
+    --tertiary: rgb(97, 79, 73);
+    --dark: rgb(51, 44, 42);
     --light: rgb(247, 238, 238);
   }
 
+  body {
+    color: var(--primary);
+  background-color: var(--light);
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+  }
+
 header {
-    display: inline-block;
-    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px 2% 10px 0;
+    background-color: var(--tertiary);
+    box-shadow: 0 5px 30px rgba(170, 146, 206, 0.4);
 }
 
-
-.title, nav {
-    width: 300px;
-    display: inline-block;
+header h1 {
+    padding: 4px 1% 4px;
+  margin: 0;
+  font-size: 4vw;
+  line-height: 1;
+  color: var(--tertiary);
+  background-color: var(--secondary);
 }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+nav a {
+    text-decoration: overline;
+  padding: 5px 10px;
+  color: var(--secondary);
+  margin-right: 10px;
+  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in-out;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--primary);
+}
+/* use as an over glow for images if needed */
 
 img:hover {
     border: 2px solid rgb(192, 230, 23);
     border-radius: 10px;
-    background-color: blueviolet;
+    background-color: rgb(46, 43, 226);
     opacity: .7;
 }
+
+main {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .image {
+    background: rgb(120, 69, 68);
+    background-image: url("../assets/images/"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    color: var(--light);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .image div {
+    flex: 0 0 90%;
+  }
+
+  .image h2 {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    display: inline;
+  }
 
 .section3 {
     display: inline-block;
