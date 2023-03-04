@@ -1,7 +1,7 @@
 * {
-    box-sizing: content-box;
-
+    box-sizing: content-box
 }
+
 /* Added color pallet */
 :root {
     --primary: rgb(117, 50, 48);
@@ -9,15 +9,15 @@
     --tertiary: rgb(97, 79, 73);
     --dark: rgb(51, 44, 42);
     --light: rgb(247, 238, 238);
-  }
+}
 
-  body {
+body {
     color: var(--primary);
-  background-color: var(--light);
+    background-color: var(--light);
     margin: 0;
     padding: 0;
     line-height: 1.2;
-  }
+}
 
 header {
     display: flex;
@@ -31,55 +31,47 @@ header {
 }
 
 header h1 {
-    padding: 4px 1% 4px;
-  margin: 0;
-  font-size: 4vw;
-  line-height: 1;
-  color: var(--tertiary);
-  background-color: var(--secondary);
+    padding: 7px 2% 5px;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1;
+    color: var(--tertiary);
+    background-color: var(--secondary);
 }
 
-nav {
+/* nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     
-}
+} */
 
 nav a {
     text-decoration: overline;
-  padding: 5px 10px;
-  color: var(--secondary);
-  margin-right: 10px;
-  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: bottom;
-  transition: all 0.25s ease-in-out;
-  font-size: 1.2rem;
+    padding: 5px 10px;
+    color: var(--secondary);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.20s ease-in-out;
+    font-size: 1.2rem;
 }
 
 nav a:hover {
     background-size: 100% 100%;
     color: var(--primary);
 }
-/* use as an over glow for images if needed */
-
-img:hover {
-    border: 2px solid rgb(192, 230, 23);
-    border-radius: 10px;
-    background-color: rgb(46, 43, 226);
-    opacity: .7;
-}
 
 main {
     margin-top: 15px;
     margin-bottom: 30px;
-  }
+}
 
-  .image {
+.banner {
     background: rgb(120, 69, 68);
-    background-image: url("../assets/images/"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+    background-image: url("../assets/images/code\ banner.jpeg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
@@ -90,13 +82,13 @@ main {
     justify-content: flex-end;
     align-items: flex-end;
     text-align: right;
-  }
+}
 
-  .image div {
+.banner div {
     flex: 0 0 90%;
-  }
+}
 
-  .image h2 {
+.banner h2 {
     background-color: var(--secondary);
     color: var(--tertiary);
     margin: 0;
@@ -104,36 +96,53 @@ main {
     font-size: 2.3rem;
     line-height: 1.2;
     display: inline;
-  }
+}
+
+p {
+    margin: 1%;
+}
+
+/* use as an over glow for images if needed */
+
+/* img:hover {
+    border: 2px solid rgb(192, 230, 23);
+    border-radius: 10px;
+    background-color: rgb(46, 43, 226);
+    opacity: .7;
+} */
+
 
 .section3 {
     display: inline-block;
     width: 650px;
 }
 
-.section3 > div {
-    display:inline-block
+.section3>div {
+    display: inline-block
 }
 
 .a {
     width: 300px;
     height: 100px;
-   background-color: rgb(235, 235, 33); 
+    background-color: rgb(235, 235, 33);
 }
+
 .b {
-   background-color: rgb(42, 165, 73); 
-   width: 300px;
-   height: 100px;
+    background-color: rgb(42, 165, 73);
+    width: 300px;
+    height: 100px;
 }
+
 .c {
-   background-color: rgb(67, 42, 165); 
-   width: 300px;
-   height: 100px;
+    background-color: rgb(67, 42, 165);
+    width: 300px;
+    height: 100px;
 }
+
 .d {
-   background-color: rgb(247, 8, 8); 
-   width: 300px;
-   height: 100px;
+    background-color: rgb(247, 8, 8);
+    width: 300px;
+    height: 100px;
 }
 
 footer {
