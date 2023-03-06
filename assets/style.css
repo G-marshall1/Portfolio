@@ -11,28 +11,37 @@
     --light: #0e100f;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
 body {
     color: var(--primary);
     background-color: var(--light);
     margin: 0;
     padding: 0;
     line-height: 1.2;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 10px 2% 10px 0;
+    padding: 10px 6% 10px 0;
     background-color: var(--tertiary);
     box-shadow: 0 5px 30px rgba(170, 146, 206, 0.4);
 }
 
 header h1 {
-    padding: 7px 2% 5px;
+    padding: 7px 2% 5px 6%;
     margin: 0;
     font-size: 4vw;
     line-height: 1;
@@ -40,25 +49,28 @@ header h1 {
     background-color: var(--secondary);
 }
 
-/* holding to see if needed */
-/* nav {
+nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
-} */
+
+}
 
 nav a {
     text-decoration: overline;
     padding: 5px 10px;
     color: var(--secondary);
     margin-right: 10px;
-    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+    background-image: linear-gradient(250deg, var(--secondary) 0%, var(--secondary) 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: bottom;
     transition: all 0.20s ease-in-out;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+
+nav a:last-child {
+    margin-right: 0;
 }
 
 nav a:hover {
@@ -79,7 +91,7 @@ main {
     background-blend-mode: soft-light;
     min-height: 30vh;
     color: var(--light);
-    padding: 2% 6%;
+    padding: 1% 5%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -87,7 +99,7 @@ main {
 }
 
 .banner div {
-    flex: 1 2 90%;
+    flex: 0 0 90%;
 }
 
 .banner h2 {
@@ -132,7 +144,16 @@ p {
 
 .section-cont>h2 {
     flex: 0 0 20%;
-    text-align: right;
+    text-align: left;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+}
+
+#contact>h2 {
+    flex: 0 0 20%;
+    text-align: left;
     padding-right: 15px;
     border-right: 4px solid var(--primary);
     font-size: 4vw;
@@ -140,15 +161,15 @@ p {
 }
 
 .section-cont>div {
-    flex: 0 0 78%;
+    flex: 0 0 70%;
 }
 
 .section-cont p {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
-.flex-parent {
-    display: flex;
+#work {
+    display: flex !important;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -174,6 +195,7 @@ p {
 .flex-child:first-child {
     min-height: 400px;
     flex-basis: 80%;
+
 }
 
 .flex-child div {
@@ -199,23 +221,23 @@ p {
     height: 100%;
 }
 
-footer address a {
-    padding: 53px;
+#contact address a {
+    padding: 5px;
     text-decoration: overline;
-    font-size: 1.9rem;
+    font-size: 1.2rem;
     font-style: normal;
     background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: bottom;
     transition: all 0.25s ease-in-out;
-    margin: 0px 0.5rem 0.9rem;
+    margin: 0px 0.3rem 0.1rem;
     display: inline-block;
     color: #01cd78;
 }
 
-footer address a:hover {
-    background-size: 85% 85%;
+#contact address a:hover {
+    background-size: 95% 90%;
     color: var(--secondary);
 }
 
@@ -239,24 +261,110 @@ footer address a:hover {
     background-image: url(./images/stock\ 5.jpeg);
 }
 
-footer h2 {
+/* footer {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+/* footer h2 {
     display: inline-flex;
     text-align: right;
     padding-right: 15px;
     border-right: 4px solid var(--primary);
     font-size: 4vw;
     line-height: 3.0;
-}
+} */
 
-footer address {
+/* footer address {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     height: 0;
     padding: 100px;
-}
+} */
 
+@media screen and (max-width: 950px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .flex-child,
+    .flex-child:first-child {
+        flex-basis: 100%;
+    }
+
+    .flex-child:first-child {
+        min-height: 150px;
+    }
+
+    #contact>a {
+        width: 25%;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+        font-size: 10vw;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .section-cont>h2,
+    #contact>h2 {
+        flex: 0 0 100%;
+        border-bottom: 4px solid var(--primary);
+        border-right: 0;
+    }
+
+
+    .section-cont>div {
+        flex: 0 0 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        #contact>a {
+            width: 100%;
+        }
+
+
+        .flex-child:first-child {
+            min-height: 150px;
+        }
+
+        .banner {
+            justify-content: center;
+            text-align: center;
+        }
+
+        #contact address {
+            flex-direction: column;
+
+        }
+
+        /* footer {
+            flex: 0 0 100%;
+        } */
+
+        /* footer h2 {
+            flex: 0 0 100%;
+            text-align:center !important;
+        }
+
+        footer address {
+            text-align:center !important;
+        } */
+    }
+
+
+
+}
 
 /* this was my initial css that I built on. (Not being used) */
 /* .section2 {
@@ -291,8 +399,3 @@ footer address {
     width: 300px;
     height: 100px;
 } */
-
-footer {
-    display: flex;
-    justify-content: space-evenly;
-}
