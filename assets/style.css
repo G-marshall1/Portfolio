@@ -11,12 +11,10 @@
     --light: #0e100f;
 }
 
+/* space between my text size elements */
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
     margin: 0;
 }
 
@@ -41,7 +39,7 @@ header {
 }
 
 header h1 {
-    padding: 7px 2% 5px 6%;
+    padding: 10px 2% 10px 6%;
     margin: 0;
     font-size: 4vw;
     line-height: 1;
@@ -69,6 +67,7 @@ nav a {
     font-size: 1.5rem;
 }
 
+/* distance on last position item */
 nav a:last-child {
     margin-right: 0;
 }
@@ -116,16 +115,6 @@ p {
     margin: 1%;
 }
 
-/* use as an over glow for images if needed (not currently used)*/
-
-/* img:hover {
-    border: 2px solid rgb(192, 230, 23);
-    border-radius: 10px;
-    background-color: rgb(46, 43, 226);
-    opacity: .7;
-} */
-
-
 .page-container {
     max-width: 88%;
     margin-left: auto;
@@ -168,6 +157,7 @@ p {
     margin-bottom: 25px;
 }
 
+/* using an id and absolute positioning to fix line issues. */
 #work {
     display: flex !important;
     flex-wrap: wrap;
@@ -241,6 +231,7 @@ p {
     color: var(--secondary);
 }
 
+/* interactice portfolio images */
 .Horiseon {
     background-image: url(./images/Marketing\ portfolio.jpeg);
 }
@@ -261,28 +252,6 @@ p {
     background-image: url(./images/stock\ 5.jpeg);
 }
 
-/* footer {
-    display: flex;
-    justify-content: space-evenly;
-} */
-
-/* footer h2 {
-    display: inline-flex;
-    text-align: right;
-    padding-right: 15px;
-    border-right: 4px solid var(--primary);
-    font-size: 4vw;
-    line-height: 3.0;
-} */
-
-/* footer address {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 0;
-    padding: 100px;
-} */
 
 @media screen and (max-width: 950px) {
     header {
@@ -348,54 +317,6 @@ p {
 
         }
 
-        /* footer {
-            flex: 0 0 100%;
-        } */
-
-        /* footer h2 {
-            flex: 0 0 100%;
-            text-align:center !important;
-        }
-
-        footer address {
-            text-align:center !important;
-        } */
     }
 
-
-
 }
-
-/* this was my initial css that I built on. (Not being used) */
-/* .section2 {
-    display: inline-block;
-    width: 650px;
-}
-
-.section3>div {
-    display: inline-block
-}
-
-.a {
-    width: 300px;
-    height: 100px;
-    background-color: rgb(235, 235, 33);
-}
-
-.b {
-    background-color: rgb(42, 165, 73);
-    width: 300px;
-    height: 100px;
-}
-
-.c {
-    background-color: rgb(67, 42, 165);
-    width: 300px;
-    height: 100px;
-}
-
-.d {
-    background-color: rgb(247, 8, 8);
-    width: 300px;
-    height: 100px;
-} */
