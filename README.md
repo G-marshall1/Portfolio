@@ -23,6 +23,8 @@ No installation needed since it is a landing page that can be viewed here https:
 My portfolio webpage includes a title, navigation bar, banner, a header image, a breif "about me", interactive cards with text and images, and finally a contact option at the bottom of the page.
 
 
+
+
 ## Credits
 
 No other members worked on this page besides myself, however I did view templets like this page to see specific useage cases on certain elements and classes.
