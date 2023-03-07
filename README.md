@@ -5,7 +5,9 @@
 - I love creating new projects and decided the best way to share them easly would be to have them accessible through one home page!
 - I chose to create a portfolio because it shows my artistic style and create a little bit of a fun option to show prospective employers. 
 - I desided to create a  portfolio webpage that would use ease of use standard to allow anyone interested in my work to view it with little to no confusion.
-- By making this page, I learned that a anchor and class element can easily be done wrong and mess up other items on the page. I also learned how to make a page my own and open up my creative eyes a little more.
+- By making this page, I learned that a anchor and class element can easily be done wrong and mess up other items on the page. I also learned how to make a page my own and open up my creative eyes a little more.![screenshot of portfolio](https://user-images.githubusercontent.com/122425742/223331858-c504098e-a1d4-4b7e-8792-c673c76f153b.png)
+
+
 
 
 ### Table of content 
@@ -20,7 +22,7 @@
 No installation needed since it is a landing page that can be viewed here https://g-marshall1.github.io/Portfolio/
 
 ## Usage
-My portfolio webpage includes a title, navigation bar, banner, a header image, a breif "about me", interactive cards with text and images, and finally a contact option at the bottom of the page.
+My portfolio webpage includes a title, profile image, navigation bar, banner, a header image, a breif "about me", interactive cards with text and images, and finally a contact option at the bottom of the page.
 
 
 
